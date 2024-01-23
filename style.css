@@ -1,0 +1,300 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header {
+            background-color:#86d1d0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+}
+            
+             h1 {
+            color: white;
+            text-shadow: 2px 2px 4px black; 
+        }
+
+        h2 {
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation: rotate 4s infinite linear;
+            margin-right: 10px;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .product {
+            display: inline-block;
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            width: 250px;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .animated-text {
+            font-size: 24px;
+            animation: bounceText 1s infinite;
+        }
+
+        @keyframes bounceText {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animated-image {
+            width: 100%;
+            height: 150px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        .animation1 {
+            animation: rotateImage1 1s infinite;
+        }
+
+        .animation2 {
+            animation: rotateImage2 1s infinite;
+        }
+
+        .animation3 {
+            animation: rotateImage3 1s infinite;
+        }
+
+        .animation4 {
+            animation: rotateImage4 1s infinite;
+        }
+
+        @keyframes rotateImage1 {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(20px);
+            }
+
+            100% {
+                transform: translateX(-10px);
+            }
+        }
+
+        @keyframes rotateImage2 {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(10px);
+            }
+        }
+
+        @keyframes rotateImage3 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(270deg);
+            }
+        }
+
+        @keyframes rotateImage4 {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(0.8);
+            }
+        }
+
+        #cart {
+            margin-top: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .cart button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cart button:hover {
+            background-color: #777;
+        }
+
+        .cart-count {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hide-show {
+            margin-top: 20px;
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            display: block;
+            margin: 0 auto; 
+        }
+
+        .hide-show:hover {
+            background-color: #777;
+        }
+
+        .border-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #86d1d0;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            width: 100%;
+            bottom: 0;
+        }
+    .custom-animation {
+            width: 15vw;
+            height: 30vh;
+            background: url("https://img.freepik.com/free-vector/black-friday-sale-banner-with-discount-offer-details_1017-41262.jpg?size=626&ext=jpg&uid=R99655961&ga=GA1.1.252722421.1704870538&semt=sph") no-repeat;
+            background-size: cover;
+            position: fixed;
+            animation: example 4s infinite;
+            opacity: 0.1; 
+        }
+
+        @keyframes example {
+            0% {
+                left: 0px;
+               bottom: 0px;
+            }
+
+            25% {
+                right: 200px;
+                bottom: 0px;
+                
+            }
+
+            50% {
+                left: 200px;
+                bottom: 200px;
+                
+            }
+
+            75% {
+                right: 0px;
+                bottom: 200px;
+                
+            }
+
+            100% {
+                left: 0px;
+                bottom: 0px;
+                
+            }
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .fa:hover {
+            background-color: #555;
+        }
+
+        p {
+            color: #888;
+            margin-top: 10px;
+        }
+    
